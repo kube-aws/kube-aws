@@ -385,6 +385,11 @@
                   "Resource": "arn:aws:ec2:*:*:network-interface/*"
                 },
                 {{end}}
+	        {
+                  "Effect": "Allow",
+                  "Action": "ec2:ModifyInstanceAttribute",
+                  "Resource": "*"
+                },
                 {
                   "Action": [
                     "ecr:GetAuthorizationToken",
