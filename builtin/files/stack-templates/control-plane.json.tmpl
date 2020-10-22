@@ -385,6 +385,11 @@
                 },
                 {{end}}
                 {
+	        {
+                  "Effect": "Allow",
+                  "Action": "ec2:ModifyInstanceAttribute",
+                  "Resource": "*"
+                },
                   "Action": [
                     "ecr:GetAuthorizationToken",
                     "ecr:BatchCheckLayerAvailability",
