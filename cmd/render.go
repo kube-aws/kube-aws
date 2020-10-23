@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kubernetes-incubator/kube-aws/core/root"
-	"github.com/kubernetes-incubator/kube-aws/credential"
-	"github.com/kubernetes-incubator/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/core/root"
+	"github.com/kube-aws/kube-aws/credential"
+	"github.com/kube-aws/kube-aws/logger"
 	"github.com/spf13/cobra"
 )
 

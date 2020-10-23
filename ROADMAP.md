@@ -33,7 +33,7 @@ Please file an issue to make suggestions on this roadmap!
     * Private subnets and NAT gateways for etcd, controller and worker nodes
     * Deployments to existing subnets
   * Rethink how node pools are implemented
-    * See https://github.com/kubernetes-incubator/kube-aws/issues/238
+    * See https://github.com/kube-aws/kube-aws/issues/238
 
 ## v0.9.5
 
@@ -59,7 +59,7 @@ Please file an issue to make suggestions on this roadmap!
 ## v0.9.8
 
   * Kubernetes 1.7
-  * More and [more RBAC support](https://github.com/kubernetes-incubator/kube-aws/pull/675#issuecomment-303660360) (@camilb, @c-knowles)
+  * More and [more RBAC support](https://github.com/kube-aws/kube-aws/pull/675#issuecomment-303660360) (@camilb, @c-knowles)
   * Experimental support for kube-aws plugins
   * Tiller installed by default
     * For use from the plugin support
@@ -84,7 +84,7 @@ Please file an issue to make suggestions on this roadmap!
     * [authenticator](https://github.com/heptio/authenticator) integration (#1153)
     * Support for pregenerating IAM roles used by kube2iam/kiam (#1145, #1150)
   * Operatability improvements
-    * [More manageable Calico + Flannel](https://github.com/kubernetes-incubator/kube-aws/pull/675#issuecomment-303669142) (@redbaron) (#909)
+    * [More manageable Calico + Flannel](https://github.com/kube-aws/kube-aws/pull/675#issuecomment-303669142) (@redbaron) (#909)
     * Graduate from relying on CloudFormation nested stacks (#1112)
     * Ease certificate rotation (#1146)
 

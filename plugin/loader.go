@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 
 	"github.com/go-yaml/yaml"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pkg/api"
 )
 
 type Loader struct {

@@ -1,14 +1,14 @@
 # Developer Guide
 
-If you would like to contribute towards the goals of kube-aws, the easiest way to get started is to submit a pull request to the [kube-aws repository](https://github.com/kubernetes-incubator/kube-aws/), following the [contributors guide](https://github.com/kubernetes-incubator/kube-aws/blob/master/CONTRIBUTING.md). If you need some help getting started with a contribution let us know and we can point you in the right direction.
+If you would like to contribute towards the goals of kube-aws, the easiest way to get started is to submit a pull request to the [kube-aws repository](https://github.com/kube-aws/kube-aws/), following the [contributors guide](https://github.com/kube-aws/kube-aws/blob/master/CONTRIBUTING.md). If you need some help getting started with a contribution let us know and we can point you in the right direction.
 
 # Code of conduct
 
-Participation in the Kubernetes community is governed by the [Kubernetes Code of Conduct](https://github.com/kubernetes-incubator/kube-aws/blob/master/code-of-conduct.md).
+Participation in the Kubernetes community is governed by the [Kubernetes Code of Conduct](https://github.com/kube-aws/kube-aws/blob/master/code-of-conduct.md).
 
 # Build
 
-Clone the [kube-aws repository](https://github.com/kubernetes-incubator/kube-aws).
+Clone the [kube-aws repository](https://github.com/kube-aws/kube-aws).
 
 Run `make build` to compile kube-aws locally.
 

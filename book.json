@@ -6,11 +6,11 @@
   "plugins": ["edit-link", "prism", "-highlight", "github", "anchorjs"],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/kubernetes-incubator/kube-aws/edit/master/docs",
+      "base": "https://github.com/kube-aws/kube-aws/edit/master/docs",
       "label": "Edit This Page"
     },
     "github": {
-      "url": "https://github.com/kubernetes-incubator/kube-aws"
+      "url": "https://github.com/kube-aws/kube-aws"
     }
   },
   "root": "docs",

@@ -3,7 +3,7 @@ package provisioner
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/kubernetes-incubator/kube-aws/gzipcompressor"
+	"github.com/kube-aws/kube-aws/gzipcompressor"
 )
 
 func (c Content) String() string {

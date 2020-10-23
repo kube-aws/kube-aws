@@ -8,10 +8,10 @@ import (
 	"regexp"
 	"text/template"
 
-	"github.com/kubernetes-incubator/kube-aws/filereader/texttemplate"
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/provisioner"
+	"github.com/kube-aws/kube-aws/filereader/texttemplate"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/provisioner"
 )
 
 type data struct {

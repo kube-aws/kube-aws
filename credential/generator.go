@@ -8,9 +8,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/netutil"
-	"github.com/kubernetes-incubator/kube-aws/pki"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/netutil"
+	"github.com/kube-aws/kube-aws/pki"
 )
 
 type Generator struct {

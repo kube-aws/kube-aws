@@ -1,5 +1,5 @@
 CALICO_BUILD?=calico/go-build
-PACKAGE_NAME?=kubernetes-incubator/kube-aws
+PACKAGE_NAME?=kube-aws/kube-aws
 LOCAL_USER_ID?=$(shell id -u $$USER)
 
 .PHONY: build
@@ -35,13 +35,13 @@ serve-docs: docs-dependencies
 
 # For publishing to the `git remote` named `mumoshu` linked to the repo url `git@github.com:mumoshu/kube-aws.git`, the env vars should be:
 #   REPO=mumoshu/kube-aws REMOTE=mumoshu make publish-docs
-# For publishing to the `git remote` named `origin` linked to the repo url `git@github.com:kubernetes-incubator/kube-aws.git`, the env vars should be:
-#   REPO=kubernetes-incubator/kube-aws REMOTE=origin make publish-docs
+# For publishing to the `git remote` named `origin` linked to the repo url `git@github.com:kube-aws/kube-aws.git`, the env vars should be:
+#   REPO=kube-aws/kube-aws REMOTE=origin make publish-docs
 # Or just:
 #   make publish-docs
 
 .PHONY: publish-docs
-publish-docs: REPO ?= kubernetes-incubator/kube-aws
+publish-docs: REPO ?= kube-aws/kube-aws
 publish-docs: REMOTE ?= origin
 publish-docs: generate-docs
 	NODE_DEBUG=gh-pages gh-pages -d _book -r git@github.com:$(REPO).git -o $(REMOTE)

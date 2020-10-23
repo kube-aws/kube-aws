@@ -10,9 +10,9 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/kms"
-	"github.com/kubernetes-incubator/kube-aws/gzipcompressor"
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/pki"
+	"github.com/kube-aws/kube-aws/gzipcompressor"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/pki"
 )
 
 type RawAssetsOnMemory struct {

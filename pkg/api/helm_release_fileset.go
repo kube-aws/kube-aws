@@ -1,6 +1,6 @@
 package api
 
-import "github.com/kubernetes-incubator/kube-aws/provisioner"
+import "github.com/kube-aws/kube-aws/provisioner"
 
 type HelmReleaseFileset struct {
 	ValuesFile  *provisioner.RemoteFile

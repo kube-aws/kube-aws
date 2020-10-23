@@ -369,7 +369,7 @@ func generateNote(primaryMaintainer string, org string, repository string, relea
 	}
 
 	Title("Changelog since v")
-	Info("Please see our [roadmap](https://github.com/kubernetes-incubator/kube-aws/blob/master/ROADMAP.md) for details on upcoming releases.")
+	Info("Please see our [roadmap](https://github.com/kube-aws/kube-aws/blob/master/ROADMAP.md) for details on upcoming releases.")
 
 	Header("Component versions")
 

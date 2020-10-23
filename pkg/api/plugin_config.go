@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/plugin/pluginutil"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/plugin/pluginutil"
 )
 
 type PluginConfigs map[string]PluginConfig

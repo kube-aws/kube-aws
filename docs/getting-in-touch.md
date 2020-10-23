@@ -1,6 +1,6 @@
 # Issues
 
-Issues can be [reported in GitHub](https://github.com/kubernetes-incubator/kube-aws/issues), it is advised to search for existing issues prior to reporting.  
+Issues can be [reported in GitHub](https://github.com/kube-aws/kube-aws/issues), it is advised to search for existing issues prior to reporting.  
 
 # Community Chat
 

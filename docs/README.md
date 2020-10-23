@@ -6,7 +6,7 @@ To start using kube-aws, try the [Getting Started Guide](getting-started/README.
 
 Once you are familiar with the basic setup, the sections [Add-Ons](add-ons/README.md) and some [Advanced Topics](advanced-topics/README.md) cover additional setup, use cases and configuration.
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/kubernetes-incubator/kube-aws)](https://goreportcard.com/report/github.com/kubernetes-incubator/kube-aws) [![Build Status](https://travis-ci.org/kubernetes-incubator/kube-aws.svg?branch=master)](https://travis-ci.org/kubernetes-incubator/kube-aws) [![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/kube-aws/kube-aws)](https://goreportcard.com/report/github.com/kube-aws/kube-aws) [![Build Status](https://travis-ci.org/kube-aws/kube-aws.svg?branch=master)](https://travis-ci.org/kube-aws/kube-aws) [![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](LICENSE)
 
 
 # Features {#features}
@@ -26,7 +26,7 @@ kube-aws is a [Kubernetes Incubator project](https://github.com/kubernetes/commu
 
 # Announcements
 
-Older releases of kube-aws had been signed by the CoreOS key and were verifiable with the [CoreOS Application Signing Public Key](https://coreos.com/security/app-signing-key/). This was when kube-aws was maintained primarily by CoreOS. However, the signing process has been postponed since v0.9.3 since the comm. Please read the [issue \#288](https://github.com/kubernetes-incubator/kube-aws/issues/288) for more information.
+Older releases of kube-aws had been signed by the CoreOS key and were verifiable with the [CoreOS Application Signing Public Key](https://coreos.com/security/app-signing-key/). This was when kube-aws was maintained primarily by CoreOS. However, the signing process has been postponed since v0.9.3 since the comm. Please read the [issue \#288](https://github.com/kube-aws/kube-aws/issues/288) for more information.
 
 # Documentation Updates
 

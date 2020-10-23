@@ -6,10 +6,10 @@ import (
 	"text/template"
 
 	"github.com/gobuffalo/packr"
-	"github.com/kubernetes-incubator/kube-aws/builtin"
-	"github.com/kubernetes-incubator/kube-aws/filegen"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/pkg/model"
+	"github.com/kube-aws/kube-aws/builtin"
+	"github.com/kube-aws/kube-aws/filegen"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pkg/model"
 	"os"
 	"strings"
 )

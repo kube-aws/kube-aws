@@ -2,10 +2,10 @@ package root
 
 import (
 	"fmt"
-	"github.com/kubernetes-incubator/kube-aws/core/root/defaults"
-	"github.com/kubernetes-incubator/kube-aws/credential"
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/pki"
+	"github.com/kube-aws/kube-aws/core/root/defaults"
+	"github.com/kube-aws/kube-aws/credential"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/pki"
 	"io/ioutil"
 	"os"
 	"path"

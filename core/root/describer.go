@@ -6,9 +6,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/cloudformation"
-	"github.com/kubernetes-incubator/kube-aws/awsconn"
-	"github.com/kubernetes-incubator/kube-aws/core/root/config"
-	"github.com/kubernetes-incubator/kube-aws/pkg/model"
+	"github.com/kube-aws/kube-aws/awsconn"
+	"github.com/kube-aws/kube-aws/core/root/config"
+	"github.com/kube-aws/kube-aws/pkg/model"
 )
 
 type Info struct {

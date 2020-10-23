@@ -3,9 +3,9 @@ package root
 import (
 	"fmt"
 
-	"github.com/kubernetes-incubator/kube-aws/awsconn"
-	"github.com/kubernetes-incubator/kube-aws/cfnstack"
-	"github.com/kubernetes-incubator/kube-aws/core/root/config"
+	"github.com/kube-aws/kube-aws/awsconn"
+	"github.com/kube-aws/kube-aws/cfnstack"
+	"github.com/kube-aws/kube-aws/core/root/config"
 )
 
 type DestroyOptions struct {
