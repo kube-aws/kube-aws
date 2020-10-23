@@ -2770,7 +2770,7 @@ write_files:
 
                     # Hyperkube binary is not statically linked, so we need to use
                     # the musl interpreter to be able to run it in this image
-                    # See: https://github.com/kubernetes-incubator/kube-aws/pull/674#discussion_r118889687
+                    # See: https://github.com/kube-aws/kube-aws/pull/674#discussion_r118889687
                     kubectl() { /lib/ld-musl-x86_64.so.1 /opt/bin/hyperkube kubectl "$@"; }
 
                     REGION=$(metadata dynamic/instance-identity/document | jq -r .region)
@@ -2862,7 +2862,7 @@ write_files:
 
                     # Hyperkube binary is not statically linked, so we need to use
                     # the musl interpreter to be able to run it in this image
-                    # See: https://github.com/kubernetes-incubator/kube-aws/pull/674#discussion_r118889687
+                    # See: https://github.com/kube-aws/kube-aws/pull/674#discussion_r118889687
                     kubectl() { /lib/ld-musl-x86_64.so.1 /opt/bin/hyperkube kubectl "$@"; }
 
                     INSTANCE_ID=$(metadata meta-data/instance-id)
@@ -2930,7 +2930,7 @@ write_files:
 {{end}}
 
   # TODO: remove the following binding once the TLS Bootstrapping feature is enabled by default, see:
-  # https://github.com/kubernetes-incubator/kube-aws/pull/618#discussion_r115162048
+  # https://github.com/kube-aws/kube-aws/pull/618#discussion_r115162048
   # https://kubernetes.io/docs/admin/authorization/rbac/#core-component-roles
 
   # Makes kube-worker user behave like a regular member of system:nodes group,
@@ -3047,7 +3047,7 @@ write_files:
           apiGroup: rbac.authorization.k8s.io
 
   # TODO: remove the following binding once the TLS Bootstrapping feature is enabled by default, see:
-  # https://github.com/kubernetes-incubator/kube-aws/pull/618#discussion_r115162048
+  # https://github.com/kube-aws/kube-aws/pull/618#discussion_r115162048
   # https://kubernetes.io/docs/admin/authorization/rbac/#core-component-roles
 
   # Associates the add-on role `kube-aws:node-extensions` to all nodes, so that

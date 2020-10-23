@@ -5,9 +5,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/kubernetes-incubator/kube-aws/filereader/texttemplate"
-	"github.com/kubernetes-incubator/kube-aws/gzipcompressor"
-	"github.com/kubernetes-incubator/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/filereader/texttemplate"
+	"github.com/kube-aws/kube-aws/gzipcompressor"
+	"github.com/kube-aws/kube-aws/logger"
 )
 
 func NewRemoteFile(spec RemoteFileSpec) *RemoteFile {

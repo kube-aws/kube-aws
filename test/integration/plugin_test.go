@@ -8,12 +8,12 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/kubernetes-incubator/kube-aws/core/root"
-	"github.com/kubernetes-incubator/kube-aws/core/root/config"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/pkg/model"
-	"github.com/kubernetes-incubator/kube-aws/plugin"
-	"github.com/kubernetes-incubator/kube-aws/test/helper"
+	"github.com/kube-aws/kube-aws/core/root"
+	"github.com/kube-aws/kube-aws/core/root/config"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pkg/model"
+	"github.com/kube-aws/kube-aws/plugin"
+	"github.com/kube-aws/kube-aws/test/helper"
 )
 
 func TestPlugin(t *testing.T) {

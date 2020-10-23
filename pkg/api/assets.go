@@ -2,7 +2,7 @@ package api
 
 import (
 	"fmt"
-	"github.com/kubernetes-incubator/kube-aws/fingerprint"
+	"github.com/kube-aws/kube-aws/fingerprint"
 	"strings"
 )
 

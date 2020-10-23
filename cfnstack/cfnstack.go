@@ -7,7 +7,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cloudformation"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/kubernetes-incubator/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/logger"
 )
 
 var CFN_TEMPLATE_SIZE_LIMIT = 51200

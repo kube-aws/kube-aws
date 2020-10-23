@@ -90,7 +90,7 @@ worker:
       enabled: true
  ```
 
-See the relevant GitHub issues for [kube2iam](https://github.com/kubernetes-incubator/kube-aws/issues/253) and [kiam](https://github.com/kubernetes-incubator/kube-aws/issues/1055) or more information.
+See the relevant GitHub issues for [kube2iam](https://github.com/kube-aws/kube-aws/issues/253) and [kiam](https://github.com/kube-aws/kube-aws/issues/1055) or more information.
 
 You can reference controller and worker IAM Roles in a separate CloudFormation stack that provides roles to assume:
 

@@ -1,6 +1,6 @@
 package model
 
-import "github.com/kubernetes-incubator/kube-aws/pkg/api"
+import "github.com/kube-aws/kube-aws/pkg/api"
 
 // APIEndpoint represents a Kubernetes API endpoint
 type APIEndpoint struct {

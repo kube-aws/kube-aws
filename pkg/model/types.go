@@ -4,10 +4,10 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/cloudformation"
 	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/kubernetes-incubator/kube-aws/cfnstack"
-	"github.com/kubernetes-incubator/kube-aws/credential"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/provisioner"
+	"github.com/kube-aws/kube-aws/cfnstack"
+	"github.com/kube-aws/kube-aws/credential"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/provisioner"
 )
 
 type tmplCtx = interface{}

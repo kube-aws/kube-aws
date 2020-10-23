@@ -1,6 +1,6 @@
 # Introduction
 
-A draft design for [kube-aws plugins](https://github.com/kubernetes-incubator/kube-aws/issues/509). Plugins are initially defined as additions to a kube-aws generated
+A draft design for [kube-aws plugins](https://github.com/kube-aws/kube-aws/issues/509). Plugins are initially defined as additions to a kube-aws generated
 cluster that are not part of the core feature set of providing an easy to use, highly available,
 best practice cluster on AWS. Plugins can also later be used for built-in functionality to provide a more modular deployment and ability to test.
 
@@ -11,16 +11,16 @@ monitoring agent.
 1. A user wishes to deploy a component into their cluster by default that is not part of core
 Kubernetes such as cluster wide services, addons, ingress controller or even persistent volumes.
 Reasons can vary from company restrictions to always having this component form part of every 
-cluster. e.g. [the rescheduler](https://github.com/kubernetes-incubator/kube-aws/issues/118)
-1. A user wishes to add [customised parts to the CloudFormation template](https://github.com/kubernetes-incubator/kube-aws/issues/96#issuecomment-263835808) 
+cluster. e.g. [the rescheduler](https://github.com/kube-aws/kube-aws/issues/118)
+1. A user wishes to add [customised parts to the CloudFormation template](https://github.com/kube-aws/kube-aws/issues/96#issuecomment-263835808) 
 produced by kube-aws. Anything they add would need access to the same parameters and template 
 engine that already exists.
 1. A user wishes to customise existing parts of the CloudFormation template produced by kube-aws
 without necessarily having to diff all the files for changes with there sometimes being large
 conflicts or huge updates due to kube-aws changes that can be difficult to digest while
 being able to merge in the simple changes they need. Examples 
-[here](https://github.com/kubernetes-incubator/kube-aws/issues/340) and 
-[here](https://github.com/kubernetes-incubator/kube-aws/issues/338)
+[here](https://github.com/kube-aws/kube-aws/issues/340) and 
+[here](https://github.com/kube-aws/kube-aws/issues/338)
 
 # Specific Examples
 
@@ -136,9 +136,9 @@ so they can access parameters from another plugin if necessary.
 
 * Built-in plugins can either be part of the kube-aws binary or downloadable from a secure source 
 if/when the user enables that plugin. The second is recommended.
-* Built-in plugins will live under `kubernetes-incubator/kube-aws/plugins/<PLUGIN_NAME>`
+* Built-in plugins will live under `kube-aws/kube-aws/plugins/<PLUGIN_NAME>`
   * This location can be thought of as the built-in plugin repository
-* User contributed plugins will live under `kubernetes-incubator/kube-aws/contrib/plugins/<PLUGIN_NAME>`
+* User contributed plugins will live under `kube-aws/kube-aws/contrib/plugins/<PLUGIN_NAME>`
 until they are considered core or deprecated.
   * This location can be thought of as the contrib plugin repository kube-aws plugins
 * User provided will live under `<USER_DIRECTORY>/plugins/<PLUGIN_NAME>`

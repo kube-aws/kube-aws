@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pkg/api"
 	"reflect"
 	"testing"
 )

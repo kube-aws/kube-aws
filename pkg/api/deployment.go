@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/Masterminds/semver"
-	"github.com/kubernetes-incubator/kube-aws/netutil"
+	"github.com/kube-aws/kube-aws/netutil"
 )
 
 func (s DeploymentSettings) ValidateNodePool(name string) error {

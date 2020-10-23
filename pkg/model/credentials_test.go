@@ -6,9 +6,9 @@ import (
 	"encoding/pem"
 	"testing"
 
-	"github.com/kubernetes-incubator/kube-aws/credential"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/pki"
+	"github.com/kube-aws/kube-aws/credential"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pki"
 )
 
 func genAssets(t *testing.T) *credential.RawAssetsOnMemory {

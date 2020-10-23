@@ -17,7 +17,7 @@ Prior to using setting up your first Kubernetes cluster using kube-aws, you will
 
 # Step 1: Download kube-aws
 
-Go to the [releases](https://github.com/kubernetes-incubator/kube-aws/releases) and download the latest release tarball for your architecture. Extract the binary and add kube-aws to your path:
+Go to the [releases](https://github.com/kube-aws/kube-aws/releases) and download the latest release tarball for your architecture. Extract the binary and add kube-aws to your path:
 
 ```bash
 ➜ tar zxvf kube-aws-${PLATFORM}.tar.gz

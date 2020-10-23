@@ -2,7 +2,7 @@
 
 ## Download kube-aws
 
-Go to the [releases](https://github.com/kubernetes-incubator/kube-aws/releases) and download the latest release tarball for your architecture.
+Go to the [releases](https://github.com/kube-aws/kube-aws/releases) and download the latest release tarball for your architecture.
 
 Extract the binary:
 

@@ -3,8 +3,8 @@ package api
 import (
 	"fmt"
 
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/naming"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/naming"
 )
 
 type WorkerNodePool struct {
@@ -132,7 +132,7 @@ func (c WorkerNodePool) validate(experimentalGpuSupportEnabled bool) error {
 	}
 
 	if c.InstanceType == "t2.micro" || c.InstanceType == "t2.nano" {
-		logger.Warnf(`instance types "t2.nano" and "t2.micro" are not recommended. See https://github.com/kubernetes-incubator/kube-aws/issues/258 for more information`)
+		logger.Warnf(`instance types "t2.nano" and "t2.micro" are not recommended. See https://github.com/kube-aws/kube-aws/issues/258 for more information`)
 	}
 
 	if err := c.IAMConfig.Validate(); err != nil {

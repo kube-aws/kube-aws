@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/kubernetes-incubator/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/logger"
 	"github.com/mgutz/ansi"
 	"github.com/spf13/cobra"
 )

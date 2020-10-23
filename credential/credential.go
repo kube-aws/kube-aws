@@ -3,7 +3,7 @@ package credential
 import (
 	"crypto/sha256"
 	"fmt"
-	"github.com/kubernetes-incubator/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/logger"
 	"io/ioutil"
 	"os"
 	"regexp"

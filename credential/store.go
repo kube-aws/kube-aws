@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kubernetes-incubator/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/logger"
 )
 
 func (e Store) EncryptedCredentialFromPath(filePath string, defaultValue *string) (*EncryptedFile, error) {

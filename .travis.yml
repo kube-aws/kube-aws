@@ -1,7 +1,7 @@
 language: go
 go:
   - 1.11.x
-go_import_path: github.com/kubernetes-incubator/kube-aws
+go_import_path: github.com/kube-aws/kube-aws
 script:
   - travis_wait 40 make test-with-cover
 after_success:

@@ -9,9 +9,9 @@ import (
 
 	"github.com/aws/aws-sdk-go/service/kms"
 	"github.com/coreos/coreos-cloudinit/config/validate"
-	"github.com/kubernetes-incubator/kube-aws/builtin"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/test/helper"
+	"github.com/kube-aws/kube-aws/builtin"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/test/helper"
 	"github.com/stretchr/testify/assert"
 	"path/filepath"
 )

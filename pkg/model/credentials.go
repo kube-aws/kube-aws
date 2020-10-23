@@ -2,8 +2,8 @@ package model
 
 import (
 	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/kubernetes-incubator/kube-aws/credential"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/credential"
+	"github.com/kube-aws/kube-aws/pkg/api"
 )
 
 func LoadCredentials(sess *session.Session, cfg *Config, opts api.StackTemplateOptions) (*credential.CompactAssets, error) {

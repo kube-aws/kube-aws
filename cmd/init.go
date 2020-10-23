@@ -4,11 +4,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/kubernetes-incubator/kube-aws/builtin"
-	"github.com/kubernetes-incubator/kube-aws/core/root/config"
-	"github.com/kubernetes-incubator/kube-aws/filegen"
-	"github.com/kubernetes-incubator/kube-aws/flatcar/amiregistry"
-	"github.com/kubernetes-incubator/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/builtin"
+	"github.com/kube-aws/kube-aws/core/root/config"
+	"github.com/kube-aws/kube-aws/filegen"
+	"github.com/kube-aws/kube-aws/flatcar/amiregistry"
+	"github.com/kube-aws/kube-aws/logger"
 	"github.com/spf13/cobra"
 )
 

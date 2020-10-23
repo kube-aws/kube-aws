@@ -16,9 +16,9 @@ set -ve
 openssl aes-256-cbc -K $encrypted_514cf8442810_key -iv $encrypted_514cf8442810_iv -in kube-aws-bot-git-ssh-key.enc -out ci/kube-aws-bot-git-ssh-key -d
 
 ## Prevent the following error:
-##   Permissions 0644 for '/home/travis/gopath/src/github.com/kubernetes-incubator/kube-aws/ci/kube-aws-bot-git-ssh-key' are too open.
+##   Permissions 0644 for '/home/travis/gopath/src/github.com/kube-aws/kube-aws/ci/kube-aws-bot-git-ssh-key' are too open.
 ##   ...
-##   bad permissions: ignore key: /home/travis/gopath/src/github.com/kubernetes-incubator/kube-aws/ci/kube-aws-bot-git-ssh-key
+##   bad permissions: ignore key: /home/travis/gopath/src/github.com/kube-aws/kube-aws/ci/kube-aws-bot-git-ssh-key
 chmod 600 ci/kube-aws-bot-git-ssh-key
 
 # Finally run the following command to add the encrypted key to the git repo:

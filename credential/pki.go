@@ -1,8 +1,8 @@
 package credential
 
 import (
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/pki"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pki"
 	"io/ioutil"
 	"os"
 )

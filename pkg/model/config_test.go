@@ -3,7 +3,7 @@ package model
 import (
 	"testing"
 
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pkg/api"
 	"github.com/stretchr/testify/assert"
 )
 

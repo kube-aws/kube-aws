@@ -3,10 +3,10 @@ package model
 import (
 	"fmt"
 
-	"github.com/kubernetes-incubator/kube-aws/credential"
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/plugin/clusterextension"
+	"github.com/kube-aws/kube-aws/credential"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/plugin/clusterextension"
 )
 
 func newStack(stackName string, conf *Config, opts api.StackTemplateOptions, assetsConfig *credential.CompactAssets, tmplCtx func(stack *Stack) (interface{}, error), init func(stack *Stack) error) (*Stack, error) {

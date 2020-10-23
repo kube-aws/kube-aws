@@ -9,10 +9,10 @@ import (
 	"strings"
 
 	"github.com/Masterminds/semver"
-	"github.com/kubernetes-incubator/kube-aws/cfnresource"
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/naming"
-	"github.com/kubernetes-incubator/kube-aws/netutil"
+	"github.com/kube-aws/kube-aws/cfnresource"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/naming"
+	"github.com/kube-aws/kube-aws/netutil"
 )
 
 // The version of kubernetes should be set through the top level 'build' script (not hidden away here)
@@ -788,7 +788,7 @@ func (c Cluster) validate(cpStackName string) error {
 	}
 
 	if c.Controller.InstanceType == "t2.micro" || c.Etcd.InstanceType == "t2.micro" || c.Controller.InstanceType == "t2.nano" || c.Etcd.InstanceType == "t2.nano" {
-		logger.Warn(`instance types "t2.nano" and "t2.micro" are not recommended. See https://github.com/kubernetes-incubator/kube-aws/issues/258 for more information`)
+		logger.Warn(`instance types "t2.nano" and "t2.micro" are not recommended. See https://github.com/kube-aws/kube-aws/issues/258 for more information`)
 	}
 
 	if len(c.Controller.IAMConfig.Role.Name) > 0 {

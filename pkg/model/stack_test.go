@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/kubernetes-incubator/kube-aws/test/helper"
+	"github.com/kube-aws/kube-aws/test/helper"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
@@ -16,9 +16,9 @@ import (
 	"testing"
 
 	"github.com/go-yaml/yaml"
-	"github.com/kubernetes-incubator/kube-aws/credential"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/plugin/clusterextension"
+	"github.com/kube-aws/kube-aws/credential"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/plugin/clusterextension"
 	"os"
 	"path/filepath"
 )

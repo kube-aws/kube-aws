@@ -10,15 +10,15 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/kubernetes-incubator/kube-aws/cfnstack"
-	"github.com/kubernetes-incubator/kube-aws/filereader/jsontemplate"
-	"github.com/kubernetes-incubator/kube-aws/gzipcompressor"
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/naming"
-	"github.com/kubernetes-incubator/kube-aws/netutil"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/pki"
-	"github.com/kubernetes-incubator/kube-aws/provisioner"
+	"github.com/kube-aws/kube-aws/cfnstack"
+	"github.com/kube-aws/kube-aws/filereader/jsontemplate"
+	"github.com/kube-aws/kube-aws/gzipcompressor"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/naming"
+	"github.com/kube-aws/kube-aws/netutil"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pki"
+	"github.com/kube-aws/kube-aws/provisioner"
 )
 
 // VERSION set by build script

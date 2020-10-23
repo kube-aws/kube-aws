@@ -11,7 +11,7 @@ import (
 
 	"fmt"
 	"github.com/aws/aws-sdk-go/service/kms"
-	"github.com/kubernetes-incubator/kube-aws/test/helper"
+	"github.com/kube-aws/kube-aws/test/helper"
 )
 
 var goodNetworkingConfigs = []string{
@@ -62,7 +62,7 @@ func TestReadOrCreateCompactAssets(t *testing.T) {
 	helper.WithDummyCredentials(func(dir string) {
 		kmsConfig := NewKMSConfig("keyarn", &dummyEncryptService{}, nil)
 
-		// See https://github.com/kubernetes-incubator/kube-aws/issues/107
+		// See https://github.com/kube-aws/kube-aws/issues/107
 		t.Run("CachedToPreventUnnecessaryNodeReplacement", func(t *testing.T) {
 			created, err := ReadOrCreateCompactAssets(dir, true, true, true, kmsConfig)
 

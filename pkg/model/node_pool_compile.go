@@ -3,9 +3,9 @@ package model
 import (
 	"fmt"
 
-	"github.com/kubernetes-incubator/kube-aws/flatcar/amiregistry"
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/flatcar/amiregistry"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/pkg/api"
 	"github.com/pkg/errors"
 )
 

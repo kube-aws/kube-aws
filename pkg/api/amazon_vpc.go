@@ -3,7 +3,7 @@ package api
 import (
 	"fmt"
 	"github.com/aws/amazon-vpc-cni-k8s/pkg/awsutils"
-	"github.com/kubernetes-incubator/kube-aws/provisioner"
+	"github.com/kube-aws/kube-aws/provisioner"
 )
 
 type AmazonVPC struct {

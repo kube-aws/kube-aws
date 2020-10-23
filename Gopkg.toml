@@ -1,6 +1,6 @@
 # Instruct `dep ensure` to not scan deps of the packages which are not part of kube-aws
 # See https://github.com/golang/dep/issues/1329#issuecomment-340435818
-ignored = ["github.com/kubernetes-incubator/kube-aws/hack*"]
+ignored = ["github.com/kube-aws/kube-aws/hack*"]
 
 [[constraint]]
   name = "github.com/Masterminds/sprig"

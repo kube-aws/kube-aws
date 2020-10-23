@@ -9,13 +9,13 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/kubernetes-incubator/kube-aws/builtin"
-	"github.com/kubernetes-incubator/kube-aws/cfnstack"
-	"github.com/kubernetes-incubator/kube-aws/core/root"
-	"github.com/kubernetes-incubator/kube-aws/core/root/config"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/pkg/model"
-	"github.com/kubernetes-incubator/kube-aws/test/helper"
+	"github.com/kube-aws/kube-aws/builtin"
+	"github.com/kube-aws/kube-aws/cfnstack"
+	"github.com/kube-aws/kube-aws/core/root"
+	"github.com/kube-aws/kube-aws/core/root/config"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pkg/model"
+	"github.com/kube-aws/kube-aws/test/helper"
 )
 
 type ConfigTester func(c *config.Config, t *testing.T)
@@ -586,7 +586,7 @@ kubeProxy:
 			},
 		},
 		{
-			// See https://github.com/kubernetes-incubator/kube-aws/issues/365
+			// See https://github.com/kube-aws/kube-aws/issues/365
 			context:    "WithClusterNameContainsHyphens",
 			configYaml: kubeAwsSettings.withClusterName("my-cluster").minimumValidClusterYaml(),
 		},
@@ -2101,7 +2101,7 @@ vpc:
 internetGateway:
   id: igw-1a2b3c4d
 # routeTableId must be omitted
-# See https://github.com/kubernetes-incubator/kube-aws/pull/284#issuecomment-275962332
+# See https://github.com/kube-aws/kube-aws/pull/284#issuecomment-275962332
 # routeTableId: rtb-1a2b3c4d
 subnets:
 - name: private1
@@ -2213,7 +2213,7 @@ vpc:
 internetGateway:
   id: igw-1a2b3c4d
 # routeTableId must be omitted
-# See https://github.com/kubernetes-incubator/kube-aws/pull/284#issuecomment-275962332
+# See https://github.com/kube-aws/kube-aws/pull/284#issuecomment-275962332
 # routeTableId: rtb-1a2b3c4d
 subnets:
 - name: private1
@@ -2293,7 +2293,7 @@ vpc:
 internetGateway:
   id: igw-1a2b3c4d
 # routeTableId must be omitted
-# See https://github.com/kubernetes-incubator/kube-aws/pull/284#issuecomment-275962332
+# See https://github.com/kube-aws/kube-aws/pull/284#issuecomment-275962332
 # routeTableId: rtb-1a2b3c4d
 subnets:
 - name: private1
@@ -2397,7 +2397,7 @@ vpc:
 internetGateway:
   id: igw-1a2b3c4d
 # routeTableId must be omitted
-# See https://github.com/kubernetes-incubator/kube-aws/pull/284#issuecomment-275962332
+# See https://github.com/kube-aws/kube-aws/pull/284#issuecomment-275962332
 # routeTableId: rtb-1a2b3c4d
 subnets:
 - name: private1
@@ -3641,7 +3641,7 @@ apiEndpoints:
 			expectedErrorMessage: `invalid cluster: invalid apiEndpoint "default" at index 0: invalid loadBalancer: either apiAccessAllowedSourceCIDRs or securityGroupIds must be present. Try not to explicitly empty apiAccessAllowedSourceCIDRs or set one or more securityGroupIDs`,
 		},
 		{
-			// See https://github.com/kubernetes-incubator/kube-aws/issues/365
+			// See https://github.com/kube-aws/kube-aws/issues/365
 			context:              "WithClusterNameContainsDots",
 			configYaml:           kubeAwsSettings.withClusterName("my.cluster").minimumValidClusterYaml(),
 			expectedErrorMessage: "clusterName(=my.cluster) is malformed. It must consist only of alphanumeric characters, colons, or hyphens",
@@ -4141,7 +4141,7 @@ worker:
 vpc:
   id: vpc-1a2b3c4d
 # This, in combination with mapPublicIPs=false, had been implying that the route table contains a route to a preconfigured NAT gateway
-# See https://github.com/kubernetes-incubator/kube-aws/pull/284#issuecomment-276008202
+# See https://github.com/kube-aws/kube-aws/pull/284#issuecomment-276008202
 routeTableId: rtb-1a2b3c4d
 # This had been implied that all the subnets created by kube-aws should be private
 mapPublicIPs: false
@@ -4167,7 +4167,7 @@ subnets:
 vpc:
   id: vpc-1a2b3c4d
 # This, in combination with mapPublicIPs=true, had been implying that the route table contains a route to a preconfigured internet gateway
-# See https://github.com/kubernetes-incubator/kube-aws/pull/284#issuecomment-276008202
+# See https://github.com/kube-aws/kube-aws/pull/284#issuecomment-276008202
 routeTableId: rtb-1a2b3c4d
 # This had been implied that all the subnets created by kube-aws should be public
 mapPublicIPs: true

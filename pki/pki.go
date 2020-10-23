@@ -6,7 +6,7 @@ import (
 	"crypto/x509/pkix"
 	"errors"
 	"fmt"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pkg/api"
 	"math"
 	"math/big"
 	"net"
