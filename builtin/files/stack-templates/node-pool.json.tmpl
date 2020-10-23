@@ -381,6 +381,11 @@
                   "Effect": "Allow",
                   "Resource": "*"
                 },
+                {
+                  "Effect": "Allow",
+                  "Action": "ec2:ModifyInstanceAttribute",
+                  "Resource": "*"
+                },
                 {{- if $.UserData.Worker.Parts.s3 }}
                 {
                   "Effect": "Allow",
