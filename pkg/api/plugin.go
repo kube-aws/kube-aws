@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/kubernetes-incubator/kube-aws/provisioner"
+	"github.com/kube-aws/kube-aws/provisioner"
 )
 
 // A plugin consists of two parts: a set of metadata and a spec

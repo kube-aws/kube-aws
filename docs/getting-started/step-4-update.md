@@ -38,7 +38,7 @@ More concretely, steps should be taken in order to rotate your certs on nodes ar
   ```
 
 There are cases where the service account tokens used by the system pods become invalid after credentials update, and
-some of your system pods will break (especially `kube-dns`). Deleting the said secrets will solve the issue (see https://github.com/kubernetes-incubator/kube-aws/issues/1057).
+some of your system pods will break (especially `kube-dns`). Deleting the said secrets will solve the issue (see https://github.com/kube-aws/kube-aws/issues/1057).
 
 ## The etcd caveat
 

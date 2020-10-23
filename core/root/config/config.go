@@ -5,10 +5,10 @@ import (
 	"io/ioutil"
 
 	"github.com/go-yaml/yaml"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/pkg/model"
-	"github.com/kubernetes-incubator/kube-aws/plugin"
-	"github.com/kubernetes-incubator/kube-aws/plugin/clusterextension"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pkg/model"
+	"github.com/kube-aws/kube-aws/plugin"
+	"github.com/kube-aws/kube-aws/plugin/clusterextension"
 	"github.com/pkg/errors"
 )
 

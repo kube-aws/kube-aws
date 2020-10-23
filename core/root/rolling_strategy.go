@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/pkg/api"
 )
 
 // returns NodePoolRolling strategy string to be used in stack-template

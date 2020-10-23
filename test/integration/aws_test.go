@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/kubernetes-incubator/kube-aws/credential"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/test/helper"
+	"github.com/kube-aws/kube-aws/credential"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/test/helper"
 )
 
 type testEnv struct {

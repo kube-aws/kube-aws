@@ -21,7 +21,7 @@ disableContainerLinuxAutomaticUpdates: true
 #cloudformation:
 #
 #  # The service role used by CloudFormation to make AWS API calls on your behalf
-#  # See https://github.com/kubernetes-incubator/kube-aws/issues/1082 for more information
+#  # See https://github.com/kube-aws/kube-aws/issues/1082 for more information
 #  roleARN: arn:aws:iam::AWS_ACCOUNT_ID:role/YourCloudFormationAdministrativeAccessRole
 #
 #  # Override the CloudFormation logical sub-stack names of control plane, etcd and/or network.
@@ -240,7 +240,7 @@ kmsKeyArn: "{{.KMSKeyARN}}"
 #      # to follow the recommendation in AWS documentation  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
 #      # There are several cases you might need a stable name such as with kube2iam or kiam plugins. See #297 for more information.
 #      # ATTENTION: Consider limiting number of characters in clusterName and iam.role.name to avoid the resulting IAM
-#      # role name's length from exceeding the AWS limit: 64. See https://github.com/kubernetes-incubator/kube-aws/issues/347
+#      # role name's length from exceeding the AWS limit: 64. See https://github.com/kube-aws/kube-aws/issues/347
 #      # It will have attached a customer Managed Policy that you can modify afterwards if you need more permissions for your cluster.
 #      # Be careful with the Statements you modify because an update could overwrite your own.
 #      # the Statements included in the ManagedPolicy are the minimun ones required for the Controllers to run.
@@ -365,7 +365,7 @@ worker:
 #          # to follow the recommendation in AWS documentation  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
 #          # There are several cases you might need a stable name such as with .experimental.kube2IamSupport or kiam plugin. See #297 for more information.
 #          # ATTENTION: Consider limiting number of characters in clusterName and iam.role.name to avoid the resulting IAM
-#          # role name's length from exceeding the AWS limit: 64. See https://github.com/kubernetes-incubator/kube-aws/issues/347
+#          # role name's length from exceeding the AWS limit: 64. See https://github.com/kube-aws/kube-aws/issues/347
 #          # It will have attached a customer Managed Policy that you can modify afterwards if you need more permissions for your cluster.
 #          # Be careful with the Statements you modify because an update could overwrite your own.
 #          # the Statements included in the ManagedPolicy are the minimun ones required for the Workers to run.
@@ -670,7 +670,7 @@ worker:
 #  # Number of etcd nodes
 #  # (Set to an odd number >= 3 for HA control plane)
 #  # WARNING: You can't add etcd nodes after the first creation by modifying this and running `kube-aws apply`
-#  # See https://github.com/kubernetes-incubator/kube-aws/issues/631 for more information
+#  # See https://github.com/kube-aws/kube-aws/issues/631 for more information
 #  count: 1
 #
 #  # Instance type for etcd node
@@ -700,7 +700,7 @@ worker:
 #    encrypted: false
 #    # Use ephemeral instance storage for etcd data volume instead of EBS?
 #    # (Recommended set to true for high-throughput control planes)
-#    # CAUTION: Currently broken. Please don't turn this on until it is fixed in https://github.com/kubernetes-incubator/kube-aws/pull/417
+#    # CAUTION: Currently broken. Please don't turn this on until it is fixed in https://github.com/kube-aws/kube-aws/pull/417
 #    ephemeral: false
 #
 #  # Additional EBS volumes mounted on the etcd
@@ -1037,7 +1037,7 @@ worker:
 
 # Kubernetes Network CIDRs
 # You can change your serviceCIDR or podCIDR and kube-aws will facilitate the migration
-# see https://github.com/kubernetes-incubator/kube-aws/issues/1307
+# see https://github.com/kube-aws/kube-aws/issues/1307
 # NOTE: requires cluster downtime.
 
 # CIDR for all service IP addresses
@@ -1249,7 +1249,7 @@ kubernetes:
 # * an EFS file system can not be mounted from multiple subnets from the same availability zone and
 #   therefore this feature won't work like you might have expected when you're deploying your cluster to an existing VPC and
 #   wanted to mount an existing EFS to the subnet(s) created by kube-aws
-#   See https://github.com/kubernetes-incubator/kube-aws/issues/208 for more information
+#   See https://github.com/kube-aws/kube-aws/issues/208 for more information
 # * kube-aws doesn't create MountTargets for existing subnets(=NOT managed by kube-aws). If you'd like to bring your own subnets
 #   to be used by kube-aws, it is now your responsibility to configure the subnets, including creating MountTargets, accordingly
 #   to your requirements
@@ -1433,7 +1433,7 @@ experimental:
     # alwaysPullImages Note
     # Recommended to turn this on when and only when docker registries are reliable enough.
     # Otherwise, automatic pod restarts can be delayed due to temporally docker registry outages.
-    # Please see https://github.com/kubernetes-incubator/kube-aws/pull/1009#discussion_r151197787 for more info.
+    # Please see https://github.com/kube-aws/kube-aws/pull/1009#discussion_r151197787 for more info.
     alwaysPullImages:
       enabled: false
     OwnerReferencesPermissionEnforcement:

@@ -11,9 +11,9 @@ import (
 
 	"github.com/Masterminds/semver"
 	"github.com/Masterminds/sprig"
-	"github.com/kubernetes-incubator/kube-aws/fingerprint"
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/tmpl"
+	"github.com/kube-aws/kube-aws/fingerprint"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/tmpl"
 )
 
 func ParseFile(filename string, funcs template.FuncMap) (*template.Template, error) {

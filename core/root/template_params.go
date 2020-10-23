@@ -3,8 +3,8 @@ package root
 import (
 	"fmt"
 
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/pkg/model"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pkg/model"
 )
 
 // TemplateParams is the set of parameters exposed for templating cfn stack template for the root stack

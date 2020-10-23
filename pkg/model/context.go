@@ -7,10 +7,10 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cloudformation"
 	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/kubernetes-incubator/kube-aws/cfnstack"
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/naming"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/cfnstack"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/naming"
+	"github.com/kube-aws/kube-aws/pkg/api"
 )
 
 // ValidateStack validates the CloudFormation stack for this control plane already uploaded to S3

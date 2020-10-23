@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/kubernetes-incubator/kube-aws/fingerprint"
+	"github.com/kube-aws/kube-aws/fingerprint"
 )
 
 type AssetID struct {

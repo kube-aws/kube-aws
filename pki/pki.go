@@ -12,8 +12,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/pkg/api"
 )
 
 type PKI struct {

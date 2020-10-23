@@ -7,8 +7,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/aws/aws-sdk-go/service/route53"
-	"github.com/kubernetes-incubator/kube-aws/logger"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/pkg/api"
 	"strings"
 )
 

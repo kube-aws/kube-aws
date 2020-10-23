@@ -5,16 +5,16 @@ import (
 
 	"encoding/json"
 
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
-	"github.com/kubernetes-incubator/kube-aws/plugin/plugincontents"
-	"github.com/kubernetes-incubator/kube-aws/plugin/pluginutil"
-	"github.com/kubernetes-incubator/kube-aws/provisioner"
-	"github.com/kubernetes-incubator/kube-aws/tmpl"
+	"github.com/kube-aws/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/plugin/plugincontents"
+	"github.com/kube-aws/kube-aws/plugin/pluginutil"
+	"github.com/kube-aws/kube-aws/provisioner"
+	"github.com/kube-aws/kube-aws/tmpl"
 
 	//"os"
 	"path/filepath"
 
-	"github.com/kubernetes-incubator/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/logger"
 )
 
 type ClusterExtension struct {

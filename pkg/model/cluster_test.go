@@ -9,8 +9,8 @@ import (
 
 	"encoding/json"
 
-	"github.com/kubernetes-incubator/kube-aws/netutil"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/netutil"
+	"github.com/kube-aws/kube-aws/pkg/api"
 )
 
 const chinaAPIEndpointMinimalConfigYaml = `keyName: test-key-name

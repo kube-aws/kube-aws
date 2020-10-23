@@ -1,4 +1,4 @@
-module github.com/kubernetes-incubator/kube-aws
+module github.com/kube-aws/kube-aws
 
 go 1.11
 

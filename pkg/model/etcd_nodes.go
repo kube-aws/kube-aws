@@ -2,7 +2,7 @@ package model
 
 import (
 	"fmt"
-	"github.com/kubernetes-incubator/kube-aws/pkg/api"
+	"github.com/kube-aws/kube-aws/pkg/api"
 )
 
 // NewEtcdNodes derives etcd nodes from user-provided etcd node configs

@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"fmt"
-	"github.com/kubernetes-incubator/kube-aws/cmd"
+	"github.com/kube-aws/kube-aws/cmd"
 )
 
 func main() {

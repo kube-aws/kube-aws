@@ -8,7 +8,7 @@ type PlaintextFile struct {
 }
 
 // The fact KMS encryption produces different ciphertexts for the same plaintext had been
-// causing unnecessary node replacements(https://github.com/kubernetes-incubator/kube-aws/issues/107)
+// causing unnecessary node replacements(https://github.com/kube-aws/kube-aws/issues/107)
 // Persist encrypted assets for caching purpose so that we can avoid that.
 type EncryptedFile struct {
 	content             []byte

@@ -16,7 +16,7 @@ spec:
 
 This is fixed in Kubernetes 1.7.0 and later.
 
-Relevant kube-aws issue: [does hostPort not work on kube-aws/CoreOS?](https://github.com/kubernetes-incubator/kube-aws/issues/91)
+Relevant kube-aws issue: [does hostPort not work on kube-aws/CoreOS?](https://github.com/kube-aws/kube-aws/issues/91)
 
 See [the related upstream issue](https://github.com/kubernetes/kubernetes/issues/23920#issuecomment-254918942) for more information.
 

@@ -3,7 +3,7 @@ package api
 import (
 	"errors"
 	"fmt"
-	"github.com/kubernetes-incubator/kube-aws/logger"
+	"github.com/kube-aws/kube-aws/logger"
 	"strings"
 )
 
