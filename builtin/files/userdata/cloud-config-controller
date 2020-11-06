@@ -343,10 +343,10 @@ coreos:
         --mount volume=var-lib-calico,target=/var/lib/calico \
         --volume var-log,kind=host,source=/var/log \
         {{- if gt (len .Kubelet.Mounts) 0 }}
-        {{ range $i, $m := .Kubelet.Mounts -}}
-        {{ range $j, $a := $m.ToRktRunArgs -}}
+        {{- range $i, $m := .Kubelet.Mounts }}
+        {{- range $j, $a := $m.ToRktRunArgs }}
         {{ $a }} \
-        {{ end }}
+        {{- end }}
         {{- end }}
         {{- end }}
         --mount volume=var-log,target=/var/log \
@@ -368,7 +368,7 @@ coreos:
         {{- if checkVersion ">= 1.14" .K8sVer }}
         --bootstrap-kubeconfig=/etc/kubernetes/kubeconfig/worker-bootstrap.yaml \
         {{- end }}
-        {{ if .Kubelet.Kubeconfig -}}
+        {{- if .Kubelet.Kubeconfig }}
         --kubeconfig={{ .Kubelet.Kubeconfig }} \
         {{- else }}
         --kubeconfig=/etc/kubernetes/kubeconfig/kubelet.yaml \
