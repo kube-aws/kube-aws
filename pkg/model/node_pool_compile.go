@@ -80,13 +80,13 @@ func NodePoolCompile(spec api.WorkerNodePool, main *Config) (*NodePoolConfig, er
 	}
 
 	var ami string
-	if spec.AmiId == "" {
+	if cfg.DeploymentSettings.AmiId == "" {
 		var err error
 		if ami, err = amiregistry.GetAMI(main.Region.String(), cfg.ReleaseChannel); err != nil {
 			return nil, errors.Wrapf(err, "unable to fetch AMI for worker node pool \"%s\"", spec.NodePoolName)
 		}
 	} else {
-		ami = spec.AmiId
+		ami = cfg.DeploymentSettings.AmiId
 	}
 	c.AMI = ami
 
