@@ -8779,7 +8779,6 @@ write_files:
                 requests:
                   ephemeral-storage: 256Mi
                 limits:
-                  cpu: 10m
                   memory: 45Mi
               volumeMounts:
               - name: kube-dns-config
