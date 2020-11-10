@@ -163,6 +163,14 @@
               ],
               "Resource": { "Fn::Join" : [ "", ["arn:{{.Region.Partition}}:s3:::", {{$.EtcdSnapshotsS3PathRef}}, "/*" ]]}
             },
+            {{/* Required for Calico's AWS source-destination-check: https://github.com/projectcalico/calico/pull/3652 */}}
+            {{if eq .Kubernetes.Networking.SelfHosting.Type "calico"}}
+            {
+              "Effect": "Allow",
+              "Action": "ec2:ModifyInstanceAttribute",
+              "Resource": "*"
+            },
+            {{end}}
             {{/* Required for `etcdadm reconfigure` to determine the number of active etcd nodes */}}
             {
               "Action": "ec2:DescribeInstances",

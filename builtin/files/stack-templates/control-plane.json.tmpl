@@ -384,6 +384,14 @@
                   "Resource": "arn:aws:ec2:*:*:network-interface/*"
                 },
                 {{end}}
+                {{/* Required for Calico's AWS source-destination-check: https://github.com/projectcalico/calico/pull/3652 */}}
+                {{if eq .Kubernetes.Networking.SelfHosting.Type "calico"}}
+                {
+                  "Effect": "Allow",
+                  "Action": "ec2:ModifyInstanceAttribute",
+                  "Resource": "*"
+                },
+                {{end}}
                 {
                   "Action": [
                     "ecr:GetAuthorizationToken",
